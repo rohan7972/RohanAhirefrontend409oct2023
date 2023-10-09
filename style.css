@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 10%;
+  display: flex;
+  background: #111111;
+
+}
+
+.Block1 {
+  width: 23%;
+  height: 56.25rem;
+  margin: 1rem;
+  background-color: #262626;
+  border-radius: 3.12rem;
+}
+.Block1Elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+.Block2 {
+  width: 70%;
+  height: 56.25rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.upperRightBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1;
+  height: 35rem;
+  background-color: #262626;
+  border-radius: 3.12rem;
+  margin-bottom: 1rem;
+}
+
+.lowerRightBlock {
+  width: 100%;
+  height: 35rem;
+  background-color: #262626;
+  color: #FFF;
+  border-radius: 3.12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .heading1{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.proImage {
+  width: 13.87rem;
+  height: 13.87rem;
+  border-radius: 1000px;
+  border: 2px solid #333;
+}
+
+.proName {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+.proStatus {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bts {
+  size: 10rem;
+  width: 10.56rem;
+  height: 2.1rem;
+  border-radius: 90px;
+  background: #111;
+  position: relative;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Poppins;
+  margin-top: 2rem;
+  border: none;
+
+}
+
+.upperHeadingStyle {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style:normal;
+  font-weight: 1000;
+  line-height: normal;
+  position: relative;
+  left: 3rem;
+}
+
+.upperElementStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.upperElementStylePara {
+  padding: 2%;
+  width: 45%;
+  height: 30.87rem;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Poppins;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    .anchorstyle{
+    color: rgba(255, 255, 255, 0.50);
+    }
+}
+.upperElementStyleImage {
+  width: 45%;
+  height: 26rem;
+  border-radius: 40px;
+}
+
+
+.tableBorder {
+  width: 98%;
+  padding: 2;
+  height: 18rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  border-radius: 30px;
+}
+
+.tableStyle {
+  height: 100%;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-collapse: collapse;
+}
+
+
+
+.borderLeft {
+  border-left: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.upperElementStyleLink {
+  display: block;
+  color: #fff;
+}
+
+@media screen and (max-width : 500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 2200px;
+    padding: 1rem;
+  }
+
+  .Block1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 25rem;
+  }
+
+  .upperRightBlock {
+    display: flex;
+    width: 25rem;
+    height: 900px;
+  }
+  .anchorstyle{
+    color: rgba(255, 255, 255, 0.50);
+  }
+
+  .upperElementStyleImage {
+    border-radius: 45px;
+    width: 90%;
+    height: 300px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 2%;
+  }
+
+  .upperElementStylePara {
+    max-height: 39.87rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    font-size: large;
+  }
+
+  .bts {
+    width: 18.56rem;
+    height: 3.81rem;
+  }
+
+  .upperElementStyle {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 800px;
+    padding: 0.75rem;
+  }
+
+  .lowerRightBlock {
+    width: 25rem;
+  }
+}
